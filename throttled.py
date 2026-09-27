@@ -221,6 +221,8 @@ MCHBAR_ADDRESS_MASKS_BY_PCI_DEVICE = {
     # Kaby Lake-U/R and Coffee Lake-H target systems (T480/T480s/X1C6, P53).
     0x5914: MCHBAR_ADDRESS_MASK_39_15,
     0x3EC4: MCHBAR_ADDRESS_MASK_39_15,
+    # Lunar Lake / Core Ultra 200V (host bridge 0x6400; verified MHBR << 15).
+    0x6400: MCHBAR_ADDRESS_MASK_39_15,
     # Comet Lake-H (Intel doc 615212; coreboot PCI_DID_INTEL_CML_H).
     0x9B54: MCHBAR_ADDRESS_MASK_39_15,
     # Comet Lake-U (Intel doc 615229; coreboot PCI_DID_INTEL_CML_U).
